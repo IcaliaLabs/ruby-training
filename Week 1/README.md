@@ -33,14 +33,14 @@ This training guides every step an Icalier developer should follow when entering
 
 
 
-* Use snake case for variable naming
+* Use snake case for variable and method naming
 * Use camel case for naming your classes/modules
 * Use `UTF-8` for file encoding
 * Use `SCREAMING_SNAKE_CASE` for constants.
 * The names of predicate methods (methods that return a boolean value)
   should end in a question mark.
 * The names of potentially "dangerous" methods (i.e. methods that modify `self` or the
-  arguments, `exit!`, etc.) should end with an exclamation mark. 
+  arguments, `exit!`, etc.) should end with an exclamation mark.
 
 
 If you want to know more about how we code Ruby at Icalia, check out our [guides](https://github.com/IcaliaLabs/guides/tree/master/stack/ruby)
