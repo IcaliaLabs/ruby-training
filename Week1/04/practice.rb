@@ -1,44 +1,25 @@
-# Ruby Icalia Labs Training
-# Docs:
-# https://ruby-doc.org/core-2.4.1/
-#
+#This practice will break into two parts:
+# 1. Parsing a remote README file from github and save it into a HTML file
+#  1.1. Use the github-markup
+#  1.2 Look for open-uri for reading external pages of you can use RestClient or even better HTTParty
+# 2. Create class and objects for the following JSON pages: YOU MUST USE HTTPARTY
+#  2.2. http://sepomex.icalialabs.com/api/v1/zip_codes/
+#  2.3. http://sepomex.icalialabs.com/api/v1/states/
+#  2.4. http://sepomex.icalialabs.com/api/v1/cities/
+#  2.5 Each class should be able to fetch records with simple methods, look for the example class, at least 3 classes should be created,
+#      but you can be as creative as you want
 
-# Working with gems
-# Gems: Are the name of the libraries distributed with ruby
-#
-# Some of the most common ones used by Icalia are:
-# Devise - User handling
-# Carrierware - Files upload
-# Puma - Concurrent Web Server
-# PG - Posgresql adapter
-# ActiveModelSerializers - JSON API serializers
-# Kaminari - Pagination
-# MiniMagick - Image processing
-# Pry - debugging
-# Rspec - Testing
+# ======
+# Example class for practice 2
+class ZipCode
+  def initialize; end
+  def self.all; end
+  def self.find(id); end
+  def self.where(conditions); end
+  def self.find_by(condition); end
+end
 
-## Go to console and do:
-## gem install redcarpet; gem install github-markup
-
-require 'rubygems'
-require 'github/markup'
-puts GitHub::Markup.render('4.markdown', File.read('./read.markdown'))
-
-## Another beautiful example
-## RestClient: Make Web Requests beautifully
-## Go to console and do:
-## gem install rest-client
-## gem install json
-## Reference: https://github.com/rest-client/rest-client
-require 'rest-client'
-
-## Getting WebSites 
-RestClient.get 'http://www.google.com'
-
-## Getting Resources
-raw_cities = RestClient.get 'http://www.reserbus.mx/api/v1/cities.json'
-
-## Using those resources
-require 'json'
-cities = JSON.parse(raw_cities)
-cities.each { |city| puts city["name"] }
+ZipCode.all # => Returns an array of ZipCode instances
+ZipCode.find(2)# => Returns an instance of ZipCode with id 2
+ZipCode.where(conditions) # => Returns an array of ZipCode instances meeting the conditions
+ZipCode.find_by(condition) # => Returns an instance of ZipCode meeting the condition
