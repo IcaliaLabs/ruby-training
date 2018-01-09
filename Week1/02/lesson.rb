@@ -94,7 +94,7 @@ greeting.yield("Abraham") # Hi my name is Abraham, nice to meet you!
 square = -> (number) { number * number}
 square.yield(10) # 100
 
-plus = -> (a, b) { a +  b }
+plus = -> (a, b) { a + b }
 plus.yield(5, 8) # 13
 
 ## Map

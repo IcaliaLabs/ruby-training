@@ -76,7 +76,9 @@ end
 developer = {
   name: "Abraham",
   age: 29,
-  job_title: "CTO"
+  job_title: "CTO",
+  "description" => "A human being",
+  "name" => "kurenn"
 }
 
 ## Accesing hash elements

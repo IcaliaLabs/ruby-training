@@ -1,5 +1,5 @@
 # Write a script that asks the name and age for each of the developers on the room (name, age)
-# 1. Store them in an array of hashes named people e.g. [{name: "Walter", age: 25}, {name: "Abraham", age: 29}]
+# 1. Store them in an array of hashes named developers e.g. [{name: "Walter", age: 25}, {name: "Abraham", age: 29}]
 # http://ruby-doc.org/docs/ruby-doc-bundle/Tutorial/part_02/user_input.html
 # 2. Store the age in the hash as an integer
 # 3. Add a skills array to each developer on the room
