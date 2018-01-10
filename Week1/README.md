@@ -17,6 +17,7 @@ This training guides every step an Icalier developer should follow when entering
 * [05 - Emergency break](05)
 * [06 - Get to second](06)
 * [07 - Feel the heat](07)
+* [08 - Hear the engine](08)
 
 
 
