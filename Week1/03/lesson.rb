@@ -23,6 +23,7 @@ module Area
   def self.circle(r)
     PI * r * r
   end
+
 end
 
 Area.square(10) #=> 100
@@ -45,14 +46,23 @@ module Confirmable
   def confirmation_keys; end
 end
 
-class Customer < User
+class User
   include Registerable
   include Confirmable
 end
 
+class Customer < User
+end
+
+module Icalia
+  class User
+
+  end
+end
+
 # Classes
 # Higlights:
-#  - Classes names are written in SnakeCase
+#  - Classes names are written in CamelCase
 #  - Can be reopen
 #  - Can be completely overriden
 
@@ -82,6 +92,7 @@ class Animal
     @age = 0
   end
 end
+
 
 animal = Animal.new("Rex")
 animal.name = "Frank"

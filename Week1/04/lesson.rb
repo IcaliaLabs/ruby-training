@@ -10,13 +10,15 @@
 # Devise - User handling
 # Carrierware - Files upload
 # Puma - Concurrent Web Server
-# PG - Posgresql adapter
+# PG - Postgresql adapter
 # ActiveModelSerializers - JSON API serializers
 # Kaminari - Pagination
 # MiniMagick - Image processing
 # Pry - debugging
 # Rspec - Testing
 
+# gem install github-markup
+# gem install redcarpet
 require 'github/markup'
 puts GitHub::Markup.render('README.md', File.read('../README.md'))
 
@@ -28,7 +30,7 @@ puts GitHub::Markup.render('README.md', File.read('../README.md'))
 ## Reference: https://github.com/rest-client/rest-client
 require 'rest-client'
 
-## Getting WebSites
+### Getting WebSites
 RestClient.get 'http://www.google.com'
 
 ## Getting Resources
