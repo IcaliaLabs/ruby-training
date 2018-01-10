@@ -14,7 +14,8 @@ This training guides every step an Icalier developer should follow when entering
 * [02 - Down to first](02)
 * [03 - Up to speed up](03)
 * [04 - Hit it grandma](04)
-* [05 - Emergency break](04)
+* [05 - Emergency break](05)
+* [05 - Get to second](06)
 
 
 
