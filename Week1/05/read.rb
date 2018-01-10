@@ -2,7 +2,7 @@
 # http://ruby-doc.org/core-2.2.0/File.html
 
 # Read a file
-File.read('countries.txt')
+puts File.read('countries.txt')
 
 # Process a file lines
 File.readlines('countries.txt').each do |country|
